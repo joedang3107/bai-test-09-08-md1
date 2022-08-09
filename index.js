@@ -32,15 +32,26 @@
 
 // nhap a va b, tinh tong cac so tu a -> b
 
-function phepToan() {
-        let input3 = +document.getElementById("input3").value
-        let input4 = +document.getElementById("input4").value
-        let result1 = 0;
+// function phepToan() {
+//     let input3 = +document.getElementById("input3").value
+//     let input4 = +document.getElementById("input4").value
+//     let result1 = 0;
 
-        for (let index = input3; index <= input4; index++) {
- 
-            result1 += index;
-        }
-        document.getElementById("result1").innerHTML = result1;
+//     for (let index = input3; index <= input4; index++) {
+
+//         result1 += index;
+//     }
+//     document.getElementById("result1").innerHTML = result1;
+// }
+
+function theky() {
+    let nam = +document.getElementById('nam').value;
+
+    if (nam % 100 == 0) {
+        tk = nam / 100;
+        document.getElementById('theky').innerHTML = 'thế kỷ ' + Math.trunc(tk);
+    } else {
+        tk = nam / 100 + 1;
+        document.getElementById('theky').innerHTML = 'thế kỷ ' + Math.trunc(tk);
     }
-
+}
